@@ -29,11 +29,26 @@ export function App() {
   const [orderData, setOrderData] = useState<any>(null);
 
   const categories = useMemo(() => {
-    const cats = new Set<string>();
+    const priority = [
+      'أجهزة الهواتف الذكية',
+      'شواحن وبنوك طاقة',
+      'سماعات وصوتيات',
+      'إكسسوارات وحوامل الهواتف',
+      'ساعات وأساور ذكية',
+      'ملحقات الحواسيب والأجهزة',
+    ];
+    const present = new Set<string>();
     products.forEach((p) => {
-      if (p.category) cats.add(p.category);
+      if (p.category) present.add(p.category);
     });
-    return Array.from(cats);
+    const sorted: string[] = [];
+    priority.forEach((c) => {
+      if (present.has(c)) sorted.push(c);
+    });
+    present.forEach((c) => {
+      if (!sorted.includes(c)) sorted.push(c);
+    });
+    return sorted;
   }, [products]);
 
   const filteredProducts = useMemo(() => {

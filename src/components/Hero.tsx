@@ -22,15 +22,15 @@ export const Hero: React.FC<HeroProps> = ({
           <div className="lg:col-span-7 text-right">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-black/20 border border-current/10 text-xs font-bold mb-4">
               <Sparkles className="w-4 h-4 text-blue-400" />
-              <span>⚡ إلكترونيات المستقبل الذكية 2026</span>
+              <span>⚡ الهواتف الذكية والإكسسوارات المعتمدة 2026</span>
             </div>
 
             <h1 className="text-2xl sm:text-4xl lg:text-5xl font-black leading-tight mb-4 tracking-tight">
-              الجيل القادم من التقنيات والأجهزة الذكية
+              أحدث الهواتف الذكية والإكسسوارات الأصلية
             </h1>
 
             <p className="text-sm sm:text-base opacity-90 mb-6 leading-relaxed max-w-2xl font-normal">
-              شواحن سريعة، سماعات لاسلكية، ملحقات الهواتف الذكية، وأجهزة البيت الذكي بأحدث التقنيات - مرحباً بكم في <strong className="underline decoration-current/30">{storeConfig.companyNameAr}</strong>.
+              أحدث جوالات آبل وسامسونج، شواحن فائقة السرعة، سماعات لاسلكية، وحوامل وملحقات الهواتف الذكية بأعلى معايير الجودة والضمان - مرحباً بكم في <strong className="underline decoration-current/30">{storeConfig.companyNameAr}</strong>.
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
