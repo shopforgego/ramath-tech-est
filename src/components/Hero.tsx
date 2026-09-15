@@ -41,7 +41,7 @@ export const Hero: React.FC<HeroProps> = ({
                 <span>تسوق التشكيلة الآن</span>
                 <ArrowLeft className="w-4 h-4" />
               </a>
-              <span className="text-xs opacity-75">متوفر أكثر من <strong>{productsCount} منتجاً</strong> معتمد</span>
+              <span className="text-xs opacity-75">منتجات أصلية معتمدة مع الضمان الذهبي</span>
             </div>
           </div>
 
@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({
                   : 'bg-black/10 hover:bg-black/20 border border-current/10 opacity-80'
               }`}
             >
-              جميع المنتجات ({productsCount})
+              جميع المنتجات
             </button>
             {categories.map((cat) => (
               <button

@@ -137,7 +137,7 @@ export function App() {
               {selectedCategory === 'all' ? 'جميع المنتجات المتوفرة' : selectedCategory}
             </h2>
             <p className="text-xs opacity-70 mt-1">
-              عرض {filteredProducts.length} منتج متاح للتوصيل والشحن الفوري
+              منتجات أصلية معتمدة ومتاحة للشحن والتوصيل الفوري
             </p>
           </div>
 
