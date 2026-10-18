@@ -23,7 +23,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicies }) => {
                 <ShieldCheck className="w-4 h-4" />
                 <span>متجر سعودي رسمي معتمد</span>
               </div>
-              <div>الرقم الضريبي: {storeConfig.taxNumber}</div>
               <div>الكيان: شركة تجارية سعودية نشطة معتمدة</div>
             </div>
           </div>
@@ -61,7 +60,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenPolicies }) => {
             <ul className="space-y-2.5 text-slate-300">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-amber-400 flex-shrink-0 mt-0.5" />
-                <span>{storeConfig.fullAddress} (رمز: {storeConfig.shortAddress})</span>
+                <span>{storeConfig.fullAddress}</span>
               </li>
               <li className="flex items-center gap-2 text-slate-400 text-[11px]">
                 <Clock className="w-4 h-4 text-amber-400 flex-shrink-0" />
