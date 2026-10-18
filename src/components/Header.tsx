@@ -1,5 +1,5 @@
 import React from 'react';
-import { Search, ShoppingBag, ShieldCheck, Phone } from 'lucide-react';
+import { Search, ShoppingBag, ShieldCheck } from 'lucide-react';
 import { storeConfig } from '../config/store';
 import { Logo } from './Logo';
 
@@ -27,12 +27,8 @@ export const Header: React.FC<HeaderProps> = ({
           <div className="flex items-center gap-4 text-[11px]">
             <span className="flex items-center gap-1">
               <ShieldCheck className="w-3.5 h-3.5" />
-              سجل تجاري: {storeConfig.cr}
+              <span>متجر سعودي رسمي معتمد</span>
             </span>
-            <a href={`https://wa.me/${storeConfig.whatsapp}`} target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:underline">
-              <Phone className="w-3.5 h-3.5" />
-              خدمة العملاء: {storeConfig.phone}
-            </a>
           </div>
         </div>
       </div>

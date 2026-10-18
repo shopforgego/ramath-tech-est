@@ -98,7 +98,7 @@ export const PoliciesModal: React.FC<PoliciesModalProps> = ({
           {activeTab === 'terms' && (
             <div className="space-y-3">
               <h4 className="font-bold text-white text-sm">الشروط والأحكام العامة:</h4>
-              <p>باستخدامك لموقع <strong>{storeConfig.storeNameAr}</strong> التابع لـ <strong>{storeConfig.companyNameAr}</strong> (سجل تجاري: {storeConfig.cr}):</p>
+              <p>باستخدامك لموقع <strong>{storeConfig.storeNameAr}</strong> التابع لـ <strong>{storeConfig.companyNameAr}</strong>:</p>
               <ul className="list-disc pr-5 space-y-1.5 text-slate-400">
                 <li>كافة الأسعار المعروضة شاملة لضريبة القيمة المضافة (VAT) المقررة نظاماً بنسبة 15%.</li>
                 <li>يرجى التأكد من مطابقة رقم هيكل السيارة (VIN) أو رقم القطعة (OEM Part Number) قبل التثبيت.</li>
